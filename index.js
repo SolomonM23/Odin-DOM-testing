@@ -7,7 +7,7 @@ content.textContent = 'This is the glorious text-content!';
 container.appendChild(content);
 
 //Exercise starts below 
-const paragraph = document.createElement('p');
+const paragraph = document.createElement('p'); //not showing
 paragraph.style.cssText = 'color: red;';
 paragraph.textContent = `Hey I'm red!`;
 container.appendChild(paragraph);
@@ -17,12 +17,15 @@ h3.style.cssText = 'color: blue;';
 h3.textContent = `I'm a blue h3!`;
 container.appendChild(h3);
 
-const div = document.createElement('div');
-div.setAttribute('style', 'border-color: black; background-color: pink;');
+const secondDiv = document.createElement('div');
+secondDiv.style.border = '5px solid black'; 
+secondDiv.style.background = 'pink';
     const h1 = document.createElement('h1');
     h1.textContent = `I'm in a div!`;
-    div.appendChild(h1);
+    secondDiv.appendChild(h1);
+
     const paragraph2 = document.createElement('p');
-    paragraph.textContent = 'ME TOO!';
-    div.appendChild(p);
-container.appendChild(div);
+    paragraph2.textContent = 'ME TOO!';
+    secondDiv.appendChild(paragraph2);
+
+container.appendChild(secondDiv);
