@@ -29,3 +29,15 @@ secondDiv.style.background = 'pink';
     secondDiv.appendChild(paragraph2);
 
 container.appendChild(secondDiv);
+
+//events on the button
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+}
+
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', alertFunction);
+btn.addEventListener('click', function (e) {
+    console.log(e.target);
+});
